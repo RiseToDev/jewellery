@@ -1,21 +1,21 @@
 {
-  "name": "gulp_template",
+  "name": "jewellery",
   "version": "1.0.0",
-  "description": "template",
+  "description": "training in front-end development",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RiseToDev/gulp_template"
+    "url": "git+https://github.com/RiseToDev/jewellery"
   },
   "author": "Rise",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RiseToDev/gulp_template/issues"
+    "url": "https://github.com/RiseToDev/jewellery/issues"
   },
-  "homepage": "https://github.com/RiseToDev/gulp_template#readme",
+  "homepage": "https://github.com/RiseToDev/jewellery#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
