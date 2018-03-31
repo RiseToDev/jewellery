@@ -48,6 +48,12 @@ nav li a {
   color: #FFFFFF;
   font-size: 1rem; }
 
+nav li a:hover {
+  color: #BDBDBD; }
+
+nav li a:active {
+  color: #3F3F3F; }
+
 .entrance {
   padding-top: 15rem; }
 
@@ -62,7 +68,12 @@ nav li a {
   text-transform: uppercase;
   line-height: 4.2rem; }
 
+button {
+  cursor: pointer; }
+
+/*---------btn-learn---------*/
 .btn-learn {
+  position: relative;
   width: 11.4rem;
   height: 4rem;
   background-color: #e92121;
@@ -71,10 +82,60 @@ nav li a {
           border-radius: 3px;
   color: #FFFFFF;
   font-size: 1.13rem;
-  font-family: 'Roboto', sans-serif;
   font-weight: bold; }
 
+.btn-learn span {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.btn-learn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1.5rem;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.btn-learn:hover span {
+  padding-right: 1rem; }
+
+.btn-learn:hover span:after {
+  opacity: 1;
+  right: 0; }
+
+.btn-learn:after {
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2rem 5.7rem;
+  margin: -2rem 0 0 -5.7rem;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.btn-learn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s; }
+
+/*---------end of btn-learn---------*/
+/*---------btn-choose---------*/
 .btn-choose {
+  position: relative;
   margin-left: 1.8rem;
   width: 15rem;
   height: 4rem;
@@ -84,12 +145,72 @@ nav li a {
           border-radius: 3px;
   color: #FFFFFF;
   font-size: 1.13rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  overflow: hidden; }
 
+.blur {
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  padding: 2rem 7.5rem;
+  margin: -2rem 0 0 -7.5rem; }
+
+.btn-choose span {
+  z-index: 999;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.btn-choose span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1.5rem;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.btn-choose:hover span {
+  padding-right: 1rem; }
+
+.btn-choose:hover span:after {
+  opacity: 1;
+  right: 0; }
+
+.btn-choose:after {
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2rem 7.5rem;
+  margin: -2rem 0 0 -7.5rem;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.btn-choose:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s; }
+
+/*---------end of btn-choose---------*/
 /*--------------------end of header-----------------------*/
 .history {
-  padding: 100px 0; }
+  padding: 100px 0;
+  text-align: justify; }
 
 .history-title {
   color: #464646;
