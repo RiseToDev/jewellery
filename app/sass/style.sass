@@ -5,18 +5,27 @@ body
   font-family: 'Roboto', sans-serif
   margin: 0
 
+button:focus
+  outline-width: 0
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+/*-----------------------header----------------------------*/
 header
   background: url("../img/header.png") no-repeat center bottom
   height: 800px
   color: #FFFFFF
 
-.grad
+.gradient
   background: linear-gradient(to bottom, black, transparent)
   height: 368px
 
 .container
-  width: 50%
-/*-----------------------header----------------------------*/
+  width: 52%
+
 .logo
   font-weight: bold
   font-size: 1.71rem
@@ -60,6 +69,7 @@ nav li a:active
 
 button
   cursor: pointer
+
 /*---------btn-learn---------*/
 .btn-learn
   position: relative
@@ -111,7 +121,7 @@ button
   opacity: 1
   transition: 0s
 
-/*---------end of btn-learn---------*/
+/*------end of btn-learn-------*/
 
 /*---------btn-choose---------*/
 .btn-choose
@@ -178,13 +188,16 @@ button
   opacity: 1
   transition: 0s
 /*---------end of btn-choose---------*/
-/*--------------------end of header-----------------------*/
 
 
+/*----------end of header------------*/
 
+
+/*------our interesting history------*/
 .history
-  padding: 100px 0
-  text-align: justify
+  padding-top: 4rem
+  padding-bottom: 4rem
+//text-align: justify
 
 .history-title
   color: #464646
@@ -193,14 +206,124 @@ button
   font-size: 3.5rem
 
 .history-text
+  padding-top: 2rem
+  color: #b7b7b7
+  font-weight: 100
+  font-size: 1.1rem
+  line-height: 2rem
+  padding-bottom: 1.5rem
+
+/*----end of "our interesting history"----*/
+
+hr
+  border-width: 0.5px
+
+/*------how-does-it-work------*/
+
+
+
+.how-does-it-work
+  padding-top: 4rem
+  padding-bottom: 3rem
+
+p.how
+  margin-bottom: 1rem
+  color: #464646
+  font-weight: 800
+  font-size: 2.2rem
+
+.ask-question
   color: #b7b7b7
   font-weight: 100
   font-size: 1.2rem
   line-height: 2rem
+  text-align: center
 
-button:focus
-  outline-width: 0
+.how-symbols-ask
+  text-align: center
 
+/*------end of how-does-it-work------*/
+
+
+
+.items
+  padding-top: 6rem
+
+.what-to-do
+  font-weight: 800
+  font-size: 1.1rem
+  color: #464646
+
+.description
+  color: #b7b7b7
+  font-weight: 100
+  font-size: 1rem
+
+.slider
+  background-color: #faf9f9
+  padding: 7.14rem 0
+  position: relative
+
+.arrow-left, .arrow-right
+  display: flex
+  justify-content: center
+  position: absolute
+  margin: 1rem
+  width: 6rem
+  height: 6rem
+  background-color: white
+  color: black
+  border: none
+
+.arrow-right:hover, .arrow-left:hover
+  background-color: lightgrey
+
+.arrow-right:active, .arrow-left:active
+  background-color: darkgrey
+
+.arrow-left
+  top: 50%
+
+.arrow-right
+  top: 50%
+  right: 0%
+
+.ring-name
+  color: #464646
+  font-weight: 900
+  font-size: 2.1rem
+
+.ring-about
+  padding-top: 2rem
+  color: #b7b7b7
+  font-weight: 100
+  font-size: 1.1rem
+  line-height: 2rem
+
+.why-choose-we
+  padding: 7.1rem
+
+.title-why-choose-we
+  font-weight: 900
+  font-size: 3.4rem
+  text-transform: uppercase
+
+.why
+  font-weight: 800
+  font-size: 1.1rem
+  color: #464646
+
+.why-description
+  color: #b7b7b7
+  font-weight: 100
+  font-size: 1rem
+
+.why-description
+  margin-bottom: 2rem
+
+
+
+/*-------media queries-------------*/
 @media screen and (max-width: 1199.98px)
   html
     font-size: 10px
