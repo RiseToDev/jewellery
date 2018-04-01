@@ -242,7 +242,7 @@ hr {
 /*---------------------how-does-it-work----------------------*/
 .how-does-it-work {
   padding-top: 4.5rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 0.8rem; }
 
 p.how {
   margin-bottom: 1.65rem;
@@ -269,8 +269,8 @@ p.how {
   padding-bottom: 4rem; }
 
 .what-to-do {
+  font-family: 'Roboto', sans-serif;
   font-weight: 800;
-  font-family: 'Roboto-Bold', sans-serif;
   font-size: 1.1rem;
   color: #464646;
   padding-top: 1rem;
@@ -286,8 +286,9 @@ p.how {
 /*----------------------the slider---------------------------*/
 .slider {
   background-color: #faf9f9;
-  padding: 7.14rem 0;
-  position: relative; }
+  position: relative;
+  padding-top: 8.8rem;
+  padding-bottom: 6.8rem; }
 
 .arrow-left, .arrow-right {
   display: -webkit-box;
@@ -299,12 +300,15 @@ p.how {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  margin: 1rem;
   width: 6rem;
   height: 6rem;
   background-color: white;
   color: black;
-  border: none; }
+  border: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 .arrow-right:hover, .arrow-left:hover {
   background-color: lightgrey; }
@@ -312,11 +316,7 @@ p.how {
 .arrow-right:active, .arrow-left:active {
   background-color: darkgrey; }
 
-.arrow-left {
-  top: 50%; }
-
 .arrow-right {
-  top: 50%;
   right: 0%; }
 
 .ring-name {
@@ -325,21 +325,24 @@ p.how {
   font-size: 2.1rem; }
 
 .ring-about {
-  padding-top: 2rem;
+  padding-bottom: 1rem;
   color: #b7b7b7;
   font-weight: 100;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 2rem; }
 
 /*----------------------end of the slider----------------------*/
 /*-----------------------why-choose-we-------------------------*/
 .why-choose-we {
-  padding: 7.1rem; }
+  padding-top: 5.5rem;
+  padding-bottom: 2.2rem; }
 
 .title-why-choose-we {
   font-weight: 900;
   font-size: 3.4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  top: 50%;
+  padding-bottom: 3rem; }
 
 .why {
   font-weight: 800;
@@ -351,10 +354,39 @@ p.how {
   font-weight: 100;
   font-size: 1rem; }
 
-.why-description {
-  margin-bottom: 2rem; }
+.why-choose-we-text {
+  margin-bottom: 5.5rem; }
+
+.why-choose-we-text-right {
+  padding-left: 1rem; }
 
 /*--------------------end of why-choose-we----------------------*/
+/*------------------------our jewellery-------------------------*/
+.our-jewellery-title {
+  font-weight: 900;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  padding-left: 4.8rem; }
+
+.our-jewellery-title-symbol {
+  margin-left: 4.8rem; }
+
+.our-jewellery-description1, .our-jewellery-description2 {
+  color: #b7b7b7;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 2.2rem;
+  margin-top: 3.5rem;
+  padding: 0; }
+
+.our-jewellery-description2 {
+  padding-left: 3.7rem; }
+
+.our-jewellery-description1 {
+  padding-left: 1rem; }
+
+/*----------------------end of our jewellery--------------------*/
 /*-------media queries-------------*/
 @media screen and (max-width: 1199.98px) {
   html {
