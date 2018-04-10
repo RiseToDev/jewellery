@@ -290,7 +290,7 @@ p.how {
   padding-top: 8.8rem;
   padding-bottom: 6.8rem; }
 
-.arrow-left, .arrow-right {
+.prev, .next {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -310,13 +310,13 @@ p.how {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
 
-.arrow-right:hover, .arrow-left:hover {
+.next:hover, .prev:hover {
   background-color: lightgrey; }
 
-.arrow-right:active, .arrow-left:active {
+.next:active, .prev:active {
   background-color: darkgrey; }
 
-.arrow-right {
+.next {
   right: 0%; }
 
 .ring-name {

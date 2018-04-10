@@ -264,13 +264,14 @@ p.how
 /*-------------------end of how-does-it-work-----------------*/
 
 /*----------------------the slider---------------------------*/
+
 .slider
   background-color: #faf9f9
   position: relative
   padding-top: 8.8rem
   padding-bottom: 6.8rem
 
-.arrow-left, .arrow-right
+.prev, .next
   display: flex
   justify-content: center
   position: absolute
@@ -283,13 +284,13 @@ p.how
   top: 50%
   transform: translateY(-50%)
 
-.arrow-right:hover, .arrow-left:hover
+.next:hover, .prev:hover
   background-color: lightgrey
 
-.arrow-right:active, .arrow-left:active
+.next:active, .prev:active
   background-color: darkgrey
 
-.arrow-right
+.next
   right: 0%
 
 .ring-name
